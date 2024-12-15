@@ -5,6 +5,8 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/lm',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
+
