@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Calendar, Mail, FileText, Linkedin, Instagram } from 'lucide-react'
+import { ContactButton } from './components/ContactButton'
+import { ScheduleButton } from './components/ScheduleButton'
 
 export default function Home() {
   return (
@@ -20,24 +21,12 @@ export default function Home() {
           
           <div className="space-y-4">
             <Link href="/experience" passHref>
-              <Button className="w-full" variant="outline">
+              <button className="w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 inline-flex items-center justify-center">
                 <FileText className="mr-2 h-4 w-4" /> Experience
-              </Button>
+              </button>
             </Link>
-            <Button 
-              className="w-full" 
-              variant="outline" 
-              onClick={() => window.location.href = 'mailto:lisamarie@schwingshandl.org'}
-            >
-              <Mail className="mr-2 h-4 w-4" /> Contact
-            </Button>
-            <Button 
-              className="w-full" 
-              variant="outline"
-              onClick={() => window.open('https://cal.com/', '_blank')}
-            >
-              <Calendar className="mr-2 h-4 w-4" /> Schedule a Meeting
-            </Button>
+            <ContactButton />
+            <ScheduleButton />
           </div>
 
           <div className="mt-6 flex justify-center space-x-4">
@@ -56,3 +45,4 @@ export default function Home() {
     </div>
   )
 }
+
