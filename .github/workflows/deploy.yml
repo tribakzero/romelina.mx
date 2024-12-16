@@ -33,10 +33,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add .nojekyll file
+      - name: Prepare for deployment
         run: |
-          touch ./out/.nojekyll
-          cp out/404.html out/index.html
+          touch out/.nojekyll
+          cp out/404.html out/404/index.html
+          cp out/index.html out/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
