@@ -6,6 +6,8 @@ const nextConfig = {
   },
   basePath: '/lm',
   assetPrefix: '/lm/',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
+
