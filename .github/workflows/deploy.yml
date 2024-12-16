@@ -26,13 +26,10 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: List output directory
-        run: ls -R out
-
-      - name: Add .nojekyll file
+      - name: Prepare for deployment
         run: |
           touch ./out/.nojekyll
-          cp out/404.html out/index.html
+          echo "/* /index.html 200" > ./out/_redirects
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -40,4 +37,5 @@ jobs:
           folder: out
           branch: gh-pages
           clean: true
+          single-commit: true
 
