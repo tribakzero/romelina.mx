@@ -26,6 +26,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List build output
+        run: |
+          echo "Contents of the out directory:"
+          ls -R out
+
       - name: Prepare for deployment
         run: |
           touch ./out/.nojekyll
@@ -38,4 +43,10 @@ jobs:
           branch: gh-pages
           clean: true
           single-commit: true
+
+      - name: Verify deployment
+        run: |
+          echo "Contents of the gh-pages branch:"
+          git checkout gh-pages
+          ls -R
 
