@@ -26,6 +26,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List output directory
+        run: ls -R out
+
       - name: Add .nojekyll file
         run: |
           touch ./out/.nojekyll
