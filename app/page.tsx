@@ -1,8 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar, Mail, FileText, Linkedin, Instagram } from 'lucide-react'
-import { ContactButton } from './components/ContactButton'
-import { ScheduleButton } from './components/ScheduleButton'
 
 export default function Home() {
   return (
@@ -10,10 +10,12 @@ export default function Home() {
       <main className="max-w-md w-full bg-white rounded-lg shadow-xl overflow-hidden">
         <div className="p-6 text-center">
           <div className="w-[150px] h-[150px] mx-auto mb-4 overflow-hidden rounded-full">
-            <img
-              src="https://i.ibb.co/8dBv0tf/lm-profile.jpg"
+            <Image
+              src="/lm-profile.jpg"
               alt="Lisa-Marie Schwingshandl"
-              className="w-full h-full object-cover"
+              width={150}
+              height={150}
+              className="object-cover"
             />
           </div>
           <h1 className="text-2xl font-bold text-gray-800 mb-2">Lisa-Marie Schwingshandl</h1>
@@ -21,7 +23,7 @@ export default function Home() {
           
           <div className="space-y-4">
             <Link 
-              href="/lm/experience"
+              href="/experience"
               className="block w-full px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 inline-flex items-center justify-center"
             >
               <FileText className="mr-2 h-4 w-4" /> Experience
