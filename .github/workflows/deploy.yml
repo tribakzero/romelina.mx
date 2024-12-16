@@ -21,20 +21,17 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install -D tailwindcss postcss autoprefixer
 
       - name: Build
         run: npm run build
 
-      - name: List build output
-        run: |
-          echo "Contents of the out directory:"
-          ls -R out
-
-      - name: Prepare for deployment
+      - name: Add .nojekyll file
         run: |
           touch ./out/.nojekyll
-          echo "/* /index.html 200" > ./out/_redirects
+          cp out/404.html out/index.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -42,11 +39,4 @@ jobs:
           folder: out
           branch: gh-pages
           clean: true
-          single-commit: true
-
-      - name: Verify deployment
-        run: |
-          echo "Contents of the gh-pages branch:"
-          git checkout gh-pages
-          ls -R
 
