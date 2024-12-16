@@ -9,13 +9,14 @@ export default function Home() {
     <div className="min-h-screen bg-[#E6E6FA] flex flex-col items-center justify-center p-4">
       <main className="max-w-md w-full bg-white rounded-lg shadow-xl overflow-hidden">
         <div className="p-6 text-center">
-          <div className="relative w-[150px] h-[150px] mx-auto mb-4">
+          <div className="w-[150px] h-[150px] relative mx-auto mb-4">
             <Image
               src="https://i.ibb.co/8dBv0tf/lm-profile.jpg"
               alt="Lisa-Marie Schwingshandl"
-              fill
+              width={150}
+              height={150}
               className="rounded-full object-cover"
-              priority
+              style={{ width: '150px', height: '150px' }}
             />
           </div>
           <h1 className="text-2xl font-bold text-gray-800 mb-2">Lisa-Marie Schwingshandl</h1>
