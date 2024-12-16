@@ -7,7 +7,7 @@ export default function Experience() {
     <div className="min-h-screen bg-[#E6E6FA] flex flex-col items-center justify-center p-4">
       <main className="max-w-2xl w-full bg-white rounded-lg shadow-xl overflow-hidden">
         <div className="p-6">
-          <Link href="/" passHref>
+          <Link href="/lm" passHref>
             <Button variant="outline" className="mb-6">
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
             </Button>
