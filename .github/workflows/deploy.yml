@@ -19,12 +19,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm install
+          npm ci
 
       - name: Build
         run: npm run build
+
+      - name: Export
+        run: npm run export
 
       - name: Add .nojekyll file
         run: |
@@ -37,4 +43,10 @@ jobs:
           folder: out
           branch: gh-pages
           clean: true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: out
+          path: out
 
