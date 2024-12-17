@@ -9,12 +9,12 @@ export default function Home() {
     <div className="min-h-screen bg-[#E6E6FA] flex flex-col items-center justify-center p-4">
       <main className="max-w-md w-full bg-white rounded-lg shadow-xl overflow-hidden">
         <div className="p-6 text-center">
-          <div className="w-[150px] h-[150px] mx-auto mb-4 overflow-hidden rounded-full">
+          <div className="relative w-[150px] h-[150px] mx-auto mb-4 overflow-hidden rounded-full bg-gray-100">
             <Image
               src="/images/lm-profile.jpg"
               alt="Lisa-Marie Schwingshandl"
-              width={150}
-              height={150}
+              fill
+              sizes="150px"
               className="object-cover"
               priority
             />
