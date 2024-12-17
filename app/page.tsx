@@ -11,11 +11,12 @@ export default function Home() {
         <div className="p-6 text-center">
           <div className="w-[150px] h-[150px] mx-auto mb-4 overflow-hidden rounded-full">
             <Image
-              src="/lm-profile.jpg"
+              src="/images/lm-profile.jpg"
               alt="Lisa-Marie Schwingshandl"
               width={150}
               height={150}
               className="object-cover"
+              priority
             />
           </div>
           <h1 className="text-2xl font-bold text-gray-800 mb-2">Lisa-Marie Schwingshandl</h1>
