@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "npm install && next build && touch out/.nojekyll",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . -write"
+
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
