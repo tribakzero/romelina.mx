@@ -1,17 +1,21 @@
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
-  return (
-    <div className="min-h-screen bg-[#E6E6FA] flex flex-col items-center justify-center p-4">
-      <main className="max-w-md w-full bg-white rounded-lg shadow-xl overflow-hidden text-center p-6">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">404 - Page Not Found</h1>
-        <p className="text-gray-600 mb-6">The page you're looking for doesn't exist or has been moved.</p>
-        <Link href="/lm" passHref>
-          <Button variant="outline">Go back to homepage</Button>
-        </Link>
-      </main>
-    </div>
-  )
+    return (
+        <div className="flex min-h-screen flex-col items-center justify-center bg-[#E6E6FA] p-4">
+            <main className="w-full max-w-md overflow-hidden rounded-lg bg-white p-6 text-center shadow-xl">
+                <h1 className="mb-4 text-3xl font-bold text-gray-800">
+                    404 - Page Not Found
+                </h1>
+                <p className="mb-6 text-gray-600">
+                    The page you&apos;re looking for doesn&apos;t exist or has
+                    been moved.
+                </p>
+                <Link href="/lm" passHref>
+                    <Button variant="outline">Go back to homepage</Button>
+                </Link>
+            </main>
+        </div>
+    );
 }
-
