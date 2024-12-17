@@ -4,8 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/lm',
-  assetPrefix: '/lm/',
   trailingSlash: true,
 }
 
