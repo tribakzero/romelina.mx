@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import Button from "./components/button";
 
 export default function NotFound() {
     return (
@@ -12,9 +11,7 @@ export default function NotFound() {
                     The page you&apos;re looking for doesn&apos;t exist or has
                     been moved.
                 </p>
-                <Link href="/lm" passHref>
-                    <Button variant="outline">Go back to homepage</Button>
-                </Link>
+                <Button href="/" passHref inner={"Go back to homepage"} />
             </main>
         </div>
     );
