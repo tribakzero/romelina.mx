@@ -11,7 +11,9 @@ export default function NotFound() {
                     The page you&apos;re looking for doesn&apos;t exist or has
                     been moved.
                 </p>
-                <Button href="/" passHref inner={"Go back to homepage"} />
+                <Button href="/" passHref>
+                    "Go back to homepage"
+                </Button>
             </main>
         </div>
     );
