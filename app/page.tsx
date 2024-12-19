@@ -12,8 +12,8 @@ export default function Home() {
                         <Image
                             src={
                                 process.env.NODE_ENV == "development"
-                                    ? "/images/lm-profile.jpg"
-                                    : "/open-linktree/images/lm-profile.jpg"
+                                    ? "/images/profile.jpg"
+                                    : "/open-linktree/images/profile.jpg"
                             }
                             alt="Jane Doe"
                             fill
