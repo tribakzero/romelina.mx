@@ -15,7 +15,7 @@ export default function Home() {
                                     ? "/images/lm-profile.jpg"
                                     : "/open-linktree/images/lm-profile.jpg"
                             }
-                            alt="Lisa-Marie Schwingshandl"
+                            alt="Jane Doe"
                             fill
                             sizes="150px"
                             className="object-cover"
@@ -23,10 +23,10 @@ export default function Home() {
                         />
                     </div>
                     <h1 className="mb-2 text-2xl font-bold text-gray-800">
-                        Lisa-Marie Schwingshandl
+                        Jane Doe
                     </h1>
                     <p className="mb-6 text-gray-600">
-                        Business Development Partner at the CSM Family Office
+                        Developer @ Example
                     </p>
 
                     <div className="space-y-4">
@@ -35,7 +35,7 @@ export default function Home() {
                             Experience
                         </Button>
                         <Button
-                            href="mailto:lisamarie@schwingshandl.org"
+                            href="mailto:example@example.org"
                             fullWidth
                         >
                             <Mail className="mr-2 size-4" /> Contact
@@ -48,7 +48,7 @@ export default function Home() {
 
                     <div className="mt-6 flex justify-center space-x-4">
                         <Link
-                            href="https://www.linkedin.com/in/schmolmueller-schwingshandl/"
+                            href="https://www.linkedin.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-600 hover:text-gray-800"
@@ -56,7 +56,7 @@ export default function Home() {
                             <Linkedin className="size-6" />
                         </Link>
                         <Link
-                            href="https://www.instagram.com/lisamarieschwingshandl/"
+                            href="https://www.instagram.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-600 hover:text-gray-800"
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
             </main>
             <footer className="mt-8 text-center text-sm text-gray-500">
-                © {new Date().getFullYear()} Lisa-Marie Schwingshandl. All
+                © {new Date().getFullYear()} Jane Doe. All
                 rights reserved.
             </footer>
         </div>
