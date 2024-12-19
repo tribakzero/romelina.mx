@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: process.env.NODE_ENV == "development" ? "" : "/lm",
+    basePath: process.env.NODE_ENV == "development" ? "" : "/open-linktree",
     experimental: {
         reactCompiler: true,
     },
