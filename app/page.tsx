@@ -13,7 +13,7 @@ export default function Home() {
                             src={
                                 process.env.NODE_ENV == "development"
                                     ? "/images/lm-profile.jpg"
-                                    : "/lm/images/lm-profile.jpg"
+                                    : "/open-linktree/images/lm-profile.jpg"
                             }
                             alt="Lisa-Marie Schwingshandl"
                             fill
