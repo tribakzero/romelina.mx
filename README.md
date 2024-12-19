@@ -1,5 +1,7 @@
 # Open Source Link-in-Bio
 
+[Open LinkTree Logo](https://raw.githubusercontent.com/hlevenberg/open-linktree/main/public/images/logo.png)
+
 An open-source, customizable link-in-bio solution built with Next.js and deployed on GitHub Pages.
 
 ## 🌟 Features
