@@ -16,19 +16,19 @@ export default function Experience() {
 
                     <div className="space-y-6">
                         <ExperienceItem
-                            title="Partner, Business Development"
-                            company="CSM Family Ventures"
+                            title="Full Stack Developer"
+                            company="Google"
                             date="November 2024 – Present"
                         />
                         <ExperienceItem
-                            title="Office of the President"
-                            company="Kerna Health"
-                            date="December 2022 – Present"
+                            title="UI Developer"
+                            company="Linkedin"
+                            date="December 2022 – November 2024"
                         />
                         <ExperienceItem
-                            title="Administrative Assistant"
-                            company="Besa Sharrah for Senate"
-                            date="February 2024 – November 2024"
+                            title="Waiter"
+                            company="Applebees"
+                            date="January 2020 - December 2022"
                         />
                     </div>
 
@@ -37,14 +37,14 @@ export default function Experience() {
                     </h2>
                     <div className="space-y-6">
                         <ExperienceItem
-                            title="MBA, Business Analytics"
-                            company="Fisher College of Business, The Ohio State University"
+                            title="MBA"
+                            company="Harvard University"
                             date="August 2024"
                         />
                         <ExperienceItem
-                            title="BA, Criminal Justice & Criminology"
+                            title="BS, Computer Science"
                             company="The Ohio State University"
-                            date="May 2023"
+                            date="May 2019"
                         />
                     </div>
                 </div>
