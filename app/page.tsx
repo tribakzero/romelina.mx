@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Youtube, Instagram, Facebook, Music2 } from "lucide-react";
+import { Youtube, Instagram, Facebook, Music2, Coffee } from "lucide-react";
 // import Button from "./components/button";
 
 export default function Home() {
@@ -28,22 +28,12 @@ export default function Home() {
                         {title}
                     </p>
 
-                    {/* <div className="space-y-4">
-                        <Button href="/experience" fullWidth>
-                            <FileText className="mr-2 size-4" />
-                            Experience
-                        </Button>
-                        <Button
-                            href="mailto:example@example.org"
-                            fullWidth
-                        >
-                            <Mail className="mr-2 size-4" /> Contact
-                        </Button>
-                        <Button href="https://cal.com/" fullWidth>
+                    <div className="space-y-4">
+                        <Button href="https://ko-fi.com/ro_melancolida/" fullWidth>
                             <Calendar className="mr-2 size-4" />
-                            Schedule a Meeting
+                            Ko-fi
                         </Button>
-                    </div> */}
+                    </div>
 
                     <div className="mt-6 flex justify-center space-x-4">
                         <Link
@@ -69,6 +59,14 @@ export default function Home() {
                             className="text-gray-600 hover:text-gray-800"
                         >
                             <Instagram className="size-6" />
+                        </Link>
+                        <Link
+                            href="https://ko-fi.com/ro_melancolida/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-gray-800"
+                        >
+                            <Coffee className="size-6" />
                         </Link>
                         <Link
                             href="https://www.facebook.com/RomelinaLoExplicaTodo/"
