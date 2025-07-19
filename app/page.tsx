@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Mail, FileText, Youtube, Instagram, Facebook, Music2 } from "lucide-react";
-import Button from "./components/button";
+import { Youtube, Instagram, Facebook, Music2 } from "lucide-react";
+// import Button from "./components/button";
 
 export default function Home() {
     const name = "Aurora Sanabria";
