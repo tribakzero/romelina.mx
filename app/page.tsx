@@ -31,8 +31,6 @@ export default function Home() {
                     <div className="space-y-4">
                         <Button
                             href="https://ko-fi.com/ro_melancolida/"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             fullWidth
                         >
                             <Coffee className="mr-2 size-4" />
