@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Mail, FileText, Linkedin, Instagram } from "lucide-react";
+import { Calendar, Mail, FileText, Youtube, Instagram, Facebook, Music2 } from "lucide-react";
 import Button from "./components/button";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
                         {channel}
                     </p>
 
-                    <div className="space-y-4">
+                    {/* <div className="space-y-4">
                         <Button href="/experience" fullWidth>
                             <FileText className="mr-2 size-4" />
                             Experience
@@ -43,24 +43,40 @@ export default function Home() {
                             <Calendar className="mr-2 size-4" />
                             Schedule a Meeting
                         </Button>
-                    </div>
+                    </div> */}
 
                     <div className="mt-6 flex justify-center space-x-4">
                         <Link
-                            href="https://www.linkedin.com/"
+                            href="https://www.youtube.com/c/RomelinaLoExplicaTodo/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-600 hover:text-gray-800"
                         >
-                            <Linkedin className="size-6" />
+                            <Youtube className="size-6" />
                         </Link>
                         <Link
-                            href="https://www.instagram.com/"
+                            href="https://www.tiktok.com/@ro_melancolida/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-gray-800"
+                        >
+                            <Music2 className="size-6" />
+                        </Link>
+                        <Link
+                            href="https://www.instagram.com/ro_melancolida/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-600 hover:text-gray-800"
                         >
                             <Instagram className="size-6" />
+                        </Link>
+                        <Link
+                            href="https://www.facebook.com/RomelinaLoExplicaTodo/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-gray-800"
+                        >
+                            <Facebook className="size-6" />
                         </Link>
                     </div>
                 </div>
