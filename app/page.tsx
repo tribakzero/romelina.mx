@@ -4,6 +4,9 @@ import { Calendar, Mail, FileText, Linkedin, Instagram } from "lucide-react";
 import Button from "./components/button";
 
 export default function Home() {
+    const name = "Aurora Sanabria";
+    const channel = "Romelina lo Explica Todo";
+
     return (
         <div className="flex min-h-screen flex-col items-center justify-center bg-[#E6E6FA] p-4">
             <main className="w-full max-w-md overflow-hidden rounded-lg bg-white shadow-xl">
@@ -11,7 +14,7 @@ export default function Home() {
                     <div className="relative mx-auto mb-4 size-[150px] overflow-hidden rounded-full bg-gray-100">
                         <Image
 -                            src="/images/profile.jpg"
-                            alt="Jane Doe"
+                            alt={name}
                             fill
                             sizes="150px"
                             className="object-cover"
@@ -19,10 +22,10 @@ export default function Home() {
                         />
                     </div>
                     <h1 className="mb-2 text-2xl font-bold text-gray-800">
-                        Jane Doe
+                        {name}
                     </h1>
                     <p className="mb-6 text-gray-600">
-                        Developer @ Example
+                        {channel}
                     </p>
 
                     <div className="space-y-4">
@@ -63,8 +66,7 @@ export default function Home() {
                 </div>
             </main>
             <footer className="mt-8 text-center text-sm text-gray-500">
-                © {new Date().getFullYear()} Jane Doe. All
-                rights reserved.
+                © {new Date().getFullYear()} {name}. All rights reserved.
             </footer>
         </div>
     );
