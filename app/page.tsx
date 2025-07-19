@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Youtube, Instagram, Facebook, Music2, Coffee } from "lucide-react";
-// import Button from "./components/button";
+import Button from "./components/button";
 
 export default function Home() {
     const channel = "Romelina lo Explica Todo";
