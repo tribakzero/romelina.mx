@@ -30,7 +30,7 @@ export default function Home() {
 
                     <div className="space-y-4">
                         <Button href="https://ko-fi.com/ro_melancolida/" fullWidth>
-                            <Calendar className="mr-2 size-4" />
+                            <Coffee className="mr-2 size-4" />
                             Ko-fi
                         </Button>
                     </div>
