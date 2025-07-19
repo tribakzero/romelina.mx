@@ -13,7 +13,7 @@ export default function Home() {
                 <div className="p-6 text-center">
                     <div className="relative mx-auto mb-4 size-[150px] overflow-hidden rounded-full bg-gray-100">
                         <Image
--                            src="/images/profile.jpg"
+                            src="/images/profile.jpg"
                             alt={name}
                             fill
                             sizes="150px"
