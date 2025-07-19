@@ -29,9 +29,14 @@ export default function Home() {
                     </p>
 
                     <div className="space-y-4">
-                        <Button href="https://ko-fi.com/ro_melancolida/" fullWidth>
+                        <Button
+                            href="https://ko-fi.com/ro_melancolida/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            fullWidth
+                        >
                             <Coffee className="mr-2 size-4" />
-                            Ko-fi
+                            Apoya mi trabajo aquí ☕📚
                         </Button>
                     </div>
 
@@ -59,14 +64,6 @@ export default function Home() {
                             className="text-gray-600 hover:text-gray-800"
                         >
                             <Instagram className="size-6" />
-                        </Link>
-                        <Link
-                            href="https://ko-fi.com/ro_melancolida/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-gray-800"
-                        >
-                            <Coffee className="size-6" />
                         </Link>
                         <Link
                             href="https://www.facebook.com/RomelinaLoExplicaTodo/"
