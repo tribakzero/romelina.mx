@@ -36,7 +36,7 @@ export default function Home() {
                             fullWidth
                         >
                             <Coffee className="mr-2 size-4" />
-                            Apoya mi trabajo aquí ☕📚
+                            Apoya mi trabajo aquí
                         </Button>
                     </div>
 
